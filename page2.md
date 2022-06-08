@@ -15,3 +15,4 @@ Nginx common functions
 
 1. Http proxy, reverse proxy: As one of the most commonly used functions of web servers, especially reverse proxy.
 2. Load balancing.  There are two types of load balancing strategies provided by Nginx: built-in strategies and extended strategies.
+3. web cache, Nginx can cache different files differently, with flexible configuration, and supports FastCGI_Cache, which is mainly used to cache FastCGI dynamic programs. In conjunction with the third-party ngx_cache_purge, the content of the URL cache can be added or deleted.
