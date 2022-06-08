@@ -1,4 +1,4 @@
-##NGINX
+# NGINX
 
 ![image](https://github.com/Simple1912/Docker-php-mysql-apache-Tutorial-osSec1Group10/blob/main/GitHubimg/nginx.jpg)
 
