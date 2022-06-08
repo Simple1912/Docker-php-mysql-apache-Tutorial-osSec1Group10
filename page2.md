@@ -1,5 +1,7 @@
 ##NGINX
 
+![image](https://github.com/Simple1912/Docker-php-mysql-apache-Tutorial-osSec1Group10/blob/main/GitHubimg/nginx.jpg)
+
 Deploying NGINX tutorial
 
 Nginx is rich in functions and can be used as an HTTP server, reverse proxy server, and mail server. Support FastCGI, SSL, Virtual Host, URL Rewrite, Gzip and other functions. And supports many third-party module extensions.
