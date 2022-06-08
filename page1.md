@@ -8,4 +8,7 @@ Docker allows developers to package their applications and dependencies into a l
 
 The container completely uses the sandbox mechanism, and there will be no interface between each other (similar to iPhone apps), and more importantly, the performance overhead of the container is extremely low.
 
+Advantages of Docker
 
+
+Docker is an open platform for developing, delivering and running applications. Docker enables you to separate your application from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same way you manage your applications. By leveraging Docker's approach to delivering, testing, and deploying code quickly, you can greatly reduce the delay between writing your code and running it in production.
