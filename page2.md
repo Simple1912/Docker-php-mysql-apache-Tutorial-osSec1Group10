@@ -45,3 +45,9 @@ $dir/logs/                              - Log Related Directory，Within `domain
         ./back/                         - Day - level backup logs
             ./20170908/
 ```
+
+# HTTP service
+
+The biggest role of Nginx is to build a Web Server. With a container, the server is set up with just one line of command, and no configuration is required at all.
+
+
