@@ -17,6 +17,14 @@ Nginx common functions
 2. Load balancing.  There are two types of load balancing strategies provided by Nginx: built-in strategies and extended strategies.
 3. web cache, Nginx can cache different files differently, with flexible configuration, and supports FastCGI_Cache, which is mainly used to cache FastCGI dynamic programs. In conjunction with the third-party ngx_cache_purge, the content of the URL cache can be added or deleted.
 
+# Advantages of Nginx over Apache:
+
+1.High concurrent response performance is very good, the official Nginx processing static files concurrently 5w/s  
+2.Reverse proxy performance is very strong. (can be used for load balancing)  
+3.Low memory and cpu usage. (1/5-1/10 for Apache)  
+4.There is a health check function for backend services.  
+5.Support PHP cgi mode and fastcgi mode.  
+6.The configuration code is concise and easy to use.  
 
 Nginx configuration file structure:
 
