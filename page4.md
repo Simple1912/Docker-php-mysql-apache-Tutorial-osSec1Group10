@@ -4,7 +4,10 @@
 
 MySQL is a relational database management system developed by the Swedish MySQL AB company and is a product of Oracle. MySQL is one of the most popular relational database management systems. In terms of WEB applications, MySQL is one of the best RDBMS (Relational Database Management System, relational database management system) application software.  
 MySQL is a relational database management system, relational databases keep data in different tables instead of keeping all the data in one big warehouse, which increases speed and improves flexibility.  
-The SQL language used by MySQL is the most commonly used standardized language for accessing databases. MySQL software adopts a dual-licensing policy, which is divided into community version and commercial version. Due to its small size, fast speed, low total cost of ownership, and especially the open source feature, MySQL is generally chosen as the website for the development of small and medium-sized websites and large-scale websites. database.  
+The SQL language used by MySQL is the most commonly used standardized language for accessing databases. MySQL software adopts a dual-licensing policy, which is divided into community version and commercial version. Due to its small size, fast speed, low total cost of ownership, and especially the open source feature, MySQL is generally chosen as the website for the development of small and medium-sized websites and large-scale websites. database.    
+
+For more information and related downloads for MySQL Server and other MySQL products, please visit  
+http://www.mysql.com.
 
 # Docker run mysql
 Download mysql image, use latest by default  
