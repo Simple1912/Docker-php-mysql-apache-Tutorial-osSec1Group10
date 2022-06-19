@@ -30,7 +30,7 @@ After executing the command, your Windows Terminal should display the output as 
 
 ![image](https://github.com/Simple1912/Docker-php-mysql-apache-Tutorial-osSec1Group10/blob/main/GitHubimg/WhatsApp%20Image%202022-06-19%20at%207.07.41%20PM.jpeg)
 
-```20a1330e884852ee3785d104a580d8c478cca4eaf52234f725229649175e7eb3``` is the container name. This means, the container is successfully built and is now running. You can verify it by searching it in the Docker as in the picture below:
+```20a1330e884852ee3785d104a580d8c478cca4eaf52234f725229649175e7eb3``` is the container ID. This means, the container is successfully built and is now running. You can verify it by searching it in the Docker as in the picture below:
 
 ![image](https://github.com/Simple1912/Docker-php-mysql-apache-Tutorial-osSec1Group10/blob/main/GitHubimg/WhatsApp%20Image%202022-06-19%20at%2010.19.46%20PM.jpeg)
 
