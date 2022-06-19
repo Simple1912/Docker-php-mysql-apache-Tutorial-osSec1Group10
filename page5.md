@@ -8,101 +8,11 @@ The project has an official Docker image that simplifies deployment in container
 
 # Docker install phpmyadmin  
 Use Docker to publish phpmyadmin and connect to an existing MySQL container  
-First download the docker image of phpmyadmin  
+
+1. First, install the docker image of phpmyadmin. To install the docker image, you may execute the command below on your Windows Terminal:
 ```
-# Query the mirrors in the mirror vault
-
-docker search phpmyadmin
-# Pull the most mirrors of star or pull the mirrors you want to use
-
-docker pull docker.io/phpmyadmin/phpmyadmin
+docker pull phpmyadmin/phpmyadmin:latest
 ```
-Start the image and connect to the existing MySQL container  
-```
-# start up
+The ```pull``` command will pull (download and install) the image of phpMyAdmin into the docker.
 
-docker run --name myadmin -p 80:80 -d --link mysql-db:db docker.io/phpmyadmin/phpmyadmin
-
-# Modify the container configuration file , Copy the configuration file to the host
-
-docker cp myadmin:/etc/phpmyadmin/config.inc.php .
-
-## Modify configuration file information (db is the alias specified at startup --link)
-
-$cfg['Servers'][$i]['host'] = 'localhost' ——> $cfg['Servers'][$i]['host'] = 'db'
-
-## Copy the modified configuration file back to the container
-
-docker cp ./config.inc.php myadmin:/etc/phpmyadmin/
-
-# Restart the phpmyadmin container
-```
-
-Write the docker-compose.yml file
-```
-version: "2"
-
-services:
-
-  mysql:
-
-    image: hub.c.163.com/library/mysql
-
-    container_name: test-mysql
-
-    restart: always
-
-    ports:
-
-      - "3306:3306"
-
-    environment:
-
-      MYSQL_USER: "root"
-
-      MYSQL_PASSWORD: "root"
-
-      MYSQL_ROOT_PASSWORD: "root"
-
-    networks:
-
-      - net-mysql
-
- 
-
-  phpmyadmin:
-
-    image: docker.io/phpmyadmin/phpmyadmin
-
-    container_name: test-myadmin
-
-    ports:
-
-      - "80:80"
-
-    environment:
-
-      MYSQL_USER: "root"
-
-      MYSQL_PASSWORD: "root"
-
-      MYSQL_ROOT_PASSWORD: "root"
-
-    networks:
-
-      - net-mysql
-
- 
-
-networks:
-
-  net-mysql:
-```
-publish container
-```
-# Publish containers using commands
-
-docker-compose up -d
-```
-Reference site：  
-https://hub.docker.com/_/phpmyadmin
+![image](WhatsApp Image 2022-06-19 at 7.06.06 PM.jpeg)
